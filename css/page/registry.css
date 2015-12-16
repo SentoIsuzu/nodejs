@@ -1,0 +1,233 @@
+/**
+ * page/registry.css
+ * 注册
+ */
+
+.reg-header{
+    margin-top: 46px;
+    height: 42px;
+    background: url(../../images/reg-welcome.png) no-repeat;
+}
+.reg-header .login{
+    float: right;
+    height: 18px;
+    line-height: 18px;
+    padding: 24px 48px 0 0;
+}
+.reg-header .login a,
+.reg-content .prompt a{
+    color: #55a24d;
+}
+
+.reg-content{
+    height: 490px;
+    padding-top: 40px;
+    background: #f8f8f8;
+}
+.reg-content .row{
+    height: 43px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.reg-content label{
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    width: 230px;
+    text-align: right;
+    font-size: 14px;
+}
+.reg-content label em{
+    color: #e44a48;
+}
+.reg-content .input,
+.reg-content .tip,
+.reg-content .sms{
+    float: left;
+    height: 43px;
+    line-height: 43px;
+    border: 1px solid #c8c8c7;
+    overflow: hidden;
+}
+.reg-content .input{
+    width: 253px;
+    height: 22px;
+    padding: 11px 38px 10px 9px;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #646565;
+    background-color: #fff;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.reg-content .input:focus{
+    border-color: #8cabb4;
+}
+#captcha{
+    width: 141px;
+    padding: 11px 0 10px 9px;
+    margin-right: 21px;
+    font-size: 18px;
+    line-height: 22px;
+}
+.reg-content .captcha-area,
+.reg-content .sms-area{
+    float: left;
+    width: 250px;
+    height: 45px;
+}
+.reg-content .sms-area{
+    display: none;
+}
+.reg-content .sms{
+    width: 104px;
+    color: #636565;
+    text-align: center;
+    background: #f8f8f8;
+}
+.reg-content .captcha-img{
+    float: left;
+    width: 128px;
+    height: 45px;
+    margin-right: 10px;
+}
+.reg-content .prompt{
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    padding-top: 23px;
+    font-size: 14px;
+    color: #959595;
+}
+.reg-content .tip{
+    width: 280px;
+    padding: 0 10px;
+    color: #82986e;
+    display: none;
+}
+.reg-content .tip .two-lines{
+    line-height: 22px;
+}
+.reg-content .tip-error{
+    color: #d95334;
+}
+.reg-content .row-single{
+    padding-left: 230px;
+    margin-bottom: 10px;
+}
+.reg-content .row-captcha{
+    margin-bottom: 12px;
+}
+.reg-content .row-agreement{
+    font-size: 14px;
+}
+.reg-content .row-agreement .read-agreement{
+    color: #1281bd;
+}
+.reg-content .submit{
+    width: 270px;
+    height: 36px;
+    line-height: 36px;
+    border: 0 none;
+    font-size: 22px;
+}
+.reg-content .submit-disabled{
+    background: #ccc;
+    cursor: default;
+}
+.reg-content .submit-disabled:hover,
+.reg-content .submit-disabled:active{
+    background: #ccc;
+}
+#regName{
+    background-image: url(../../images/icon-user.png);
+}
+#pwd,
+#pwdRepeat{
+    background-image: url(../../images/icon-password.png);
+}
+.reg-content .input.success{
+    background-image: url(../../images/icon-success.png) !important;
+}
+.reg-content .input.error{
+    border-color: #ce5c5a;
+    background-image: url(../../images/icon-fail.png) !important;
+}
+#pwd-lvl{
+    position: absolute;
+    right: 440px;
+    bottom: -22px;
+    width: 168px;
+    height: 15px;
+    line-height: 14px;
+    font-size: 12px;
+    color: #9c9b9a;
+    display: none;
+}
+#pwd-lvl span{
+    float: left;
+    margin-right: 5px;
+}
+#pwd-lvl .lvl{
+    width: 28px;
+    height: 15px;
+    color: #fff;
+    text-align: center;
+    background: #b2b3b2;
+}
+#pwd-lvl .lvl-active{
+    background: #f18b15;
+}
+#agreement-content{
+    display: none;
+    width: 928px;
+    height: 502px;
+}
+#agreement-content .header{
+    height: 26px;
+    line-height: 26px;
+    font-size: 18px;
+    background: #309dd9;
+    text-align: center;
+    color: #fff;
+}
+#agreement-content .content{
+    height: 356px;
+    padding: 20px 0 20px 50px;
+}
+#agreement-content .content .wrap{
+    height: 356px;
+    padding-right: 50px;
+    font-size: 14px;
+    line-height: 28px;
+    overflow-y: auto;
+}
+#agreement-content .content p{
+    text-indent: 2em;
+}
+#agreement-content .content h5{
+    margin-top: 4px;
+    font-weight: bold;
+}
+#agreement-content .footer{
+    padding: 18px 0 0 303px;
+}
+#agreement-content .footer button{
+    width: 322px;
+    height: 34px;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+.modal{
+    padding: 0;
+}
+.modal a.close-modal{
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 26px;
+    background: url(../../images/agreement-close.png);
+}
+

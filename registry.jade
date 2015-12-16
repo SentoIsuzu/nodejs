@@ -1,0 +1,68 @@
+doctype html
+html(lang="zh_CN")
+    head
+        include include/global-head
+        link(rel="stylesheet", href="css/module/jquery.modal.css")
+        link(rel="stylesheet", href="css/page/registry.css")
+        title 欢迎注册
+    body
+        #page
+            include include/topbar
+            include include/header
+            #content
+                .layout
+                    .screen
+                        .reg-header
+                            .login
+                                | 已有账号，现在就
+                                a(href="index.html") 登录
+                        .reg-content
+                            form#registry-form(action="#", method="post", autocomplete="off")
+                                .row
+                                    label
+                                        em *&nbsp;
+                                        | 用户名：
+                                    input#regName.input(type="text", name="regName")
+                                    div#regName-tip.tip
+                                .row
+                                    label
+                                        em *&nbsp;
+                                        | 请设置密码：
+                                    input#pwd.pwd.input(type="password", name="pwd")
+                                    div#pwd-tip.tip
+                                    div#pwd-lvl
+                                        span 安全强度：
+                                        span.lvl.lvl1 弱
+                                        span.lvl.lvl2 中
+                                        span.lvl.lvl3 强
+                                .row
+                                    label
+                                        em *&nbsp;
+                                        | 请确认密码：
+                                    input#pwdRepeat.pwd.input(type="password", name="pwdRepeat")
+                                    div#pwdRepeat-tip.tip
+                                .row.row-captcha
+                                    label
+                                        em *&nbsp;
+                                        | 验证码：
+                                    input#captcha.input(type="text", name="captcha")
+                                    .captcha-area.clr
+                                        a.refresh.captcha-img(href="#")
+                                            img(src="images/test-captcha.png", alt="")
+                                        .prompt
+                                            | 看不清？
+                                            a.refresh(href="#") 换一张
+                                    .sms-area
+                                        button.sms 获取短信验证
+                                .row.row-single
+                                    div#captcha-tip.tip
+                                .row.row-single.row-agreement
+                                    input#agree(type="checkbox")
+                                    | &nbsp;我已阅读并同意
+                                    a.read-agreement(href="#agreement-content") 《智溯科技用户注册协议》
+                                .row.row-single.row-button
+                                    button.itrace-button.submit.submit-disabled(type="submit", disabled="disabled") 立即注册
+            include include/agreement
+            include include/footer
+        include include/global-js
+        script(src="js/page/registry.js")

@@ -1,0 +1,44 @@
+/**
+ * module/header.css
+ * 头部导航
+ */
+
+#header{
+    height: 92px;
+    background: #fff;
+}
+#header .layout{
+    position: relative;
+    z-index: 1;
+}
+#header .logo{
+    float: left;
+    width: 246px;
+    height: 92px;
+}
+#header .logo img{
+    width: 246px;
+    height: 92px;
+}
+#header .nav{
+    float: right;
+    line-height: 42px;
+    padding-top: 20px;
+}
+#header .nav li{
+    float: left;
+    padding-left: 28px;
+    _display: inline;
+    font-size: 16px;
+}
+#header .nav-border{
+    height: 4px;
+    width: 0;
+    position: absolute;
+    top: 62px;
+    left: 444px;
+    background: #0096df;
+}
+#header .nav-animate{
+    transition: all 0.3s;
+}

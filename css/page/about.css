@@ -1,0 +1,59 @@
+/**
+ * page/about.css
+ * 关于
+ */
+
+#banner{
+    background-image: url(../../images/banner-about.jpg);
+}
+
+.about-company,
+.about-itts,
+.about-contact-us{
+    padding: 20px 15px 80px;
+}
+.company-img{
+    margin-bottom: 36px;
+    width: 730px;
+}
+
+.about-contact-us dt{
+    width: 730px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.about-contact-us dd{
+    padding-left: 40px;
+    line-height: 36px;
+}
+.about-contact-us,
+.about-contact-us a{
+    color: #646464;
+}
+
+.about-itts{
+    padding: 20px 15px 80px;
+}
+.about-itts img{
+    padding: 18px 0 20px 28px;
+}
+.about-itts .clr{
+    padding: 0 82px 0 28px;
+}
+.about-itts .left{
+    width: 400px;
+}
+.about-itts .right{
+    width: 180px;
+}
+.about-itts dt{
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #329ed9;
+}
+.about-itts dd{
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    overflow: hidden;
+}

@@ -1,0 +1,10 @@
+/**
+ * global/global.css
+ * 全局css
+ */
+
+@import url(reset.css);
+@import url(common.css);
+@import url(../module/topbar.css);
+@import url(../module/header.css);
+@import url(../module/footer.css);

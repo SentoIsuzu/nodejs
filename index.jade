@@ -1,0 +1,95 @@
+doctype html
+html(lang="zh_CN")
+    head
+        include include/global-head
+        link(rel="stylesheet", href="css/module/jquery.modal.css")
+        link(rel="stylesheet", href="css/page/index.css")
+        title 主页
+    body
+        #page
+            include include/topbar
+            - var currentNav = "首页"
+            include include/header
+            #banner
+                .back
+                    .back-item.back-item1
+                        .screen
+                            img.erweima(src="images/test-erweima.png", alt="")
+                            a.link(href="#")
+                    .back-item.back-item2
+                    .back-item.back-item3
+                .front
+                    #search.form
+                        a.switch.switch-login(href="#")
+                        form(action="#")
+                            legend 防伪查询
+                            input.input-text.search-input(type="text",placeholder="请输入智溯码进行查询")
+                            script(src="http://api.geetest.com/get.php?gt=e266eab79debb5bb3e85597bb6122f87")
+                            button.search.disabled(type="submit", disabled="disabled") 查询
+                    #login.form
+                        a.switch.switch-search(href="#")
+                        form(action="#")
+                            legend 登录
+                            input.input-text.username-input(type="text",placeholder="用户名输入")
+                            input.input-text.password-input(type="password",placeholder="密码输入")
+                            span.clear-username
+                            .operation.clr
+                                .left
+                                    input.keep-login(type="checkbox")
+                                    | &nbsp;保持登陆
+                                .right
+                                    a(href="#") 忘记密码？
+                            button.login(type="submit") 登录
+                            .reg
+                                a(href="registry.html") 用户注册&gt;&gt;
+            #content
+                .layout
+                    .screen
+                        .func
+                            ul.clr
+                                li.itts
+                                    .func-box
+                                        .icon
+                                            h3 ITTS
+                                        dl
+                                            dt ITTS
+                                            dd
+                                                a(href="#") 真伪查询
+                                            dd
+                                                a(href="#") 渠道管理与防窜货
+                                            dd
+                                                a(href="#") 产品追踪与质量追溯
+                                            dd
+                                                a(href="#") 精确分销决策
+                                        .more
+                                            a(href="#") more&gt;&gt;
+                                li.products
+                                    .func-box
+                                        .icon
+                                            h3 产品介绍
+                                        dl
+                                            dt 产品介绍
+                                            dd
+                                                a(href="#") 防伪APP
+                                            dd
+                                                a(href="#") 电子标签
+                                            dd
+                                                a(href="#") 手持机
+                                            dd
+                                                a(href="#") 读写器
+                                        .more
+                                            a(href="#") more&gt;&gt;
+                                li.solution
+                                    .func-box
+                                        .icon
+                                            h3 解决方案
+                                        dl
+                                            dt 解决方案
+                                            dd
+                                                a(href="#") 消费品
+                                        .more
+                                            a(href="#") more&gt;&gt;
+            include include/search-popup
+            include include/footer
+        include include/global-js
+        script(src="js/page/index.js")

@@ -1,0 +1,73 @@
+/**
+ * global/common.css
+ * 通用样式
+ */
+
+body{
+    font-family: "Microsoft YaHei";
+    color: #787878;
+}
+#header,
+#content,
+#footer,
+.layout,
+.clr{
+    *zoom: 1;
+}
+#header:after,
+#content:after,
+#footer:after,
+.layout:after,
+.clr:after{
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0;
+    content: "\0020";
+}
+.screen{
+    width: 980px;
+    margin: 0 auto;
+}
+a:link,
+a:visited{
+    color: #787878;
+}
+a:hover,
+a:active{
+    color: #0096df !important;
+    text-decoration: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+button{
+    cursor: pointer;
+    border: 0 none;
+}
+.itrace-button{
+    background: #2995d3;
+    color: #fff !important;
+    text-align: center;
+}
+.itrace-button:hover,
+.itrace-button:active{
+    background: #6abde9;
+    color: #fff !important;
+}
+.banner-common{
+    height: 250px;
+    margin-bottom: 30px;
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+.modal{
+    z-index: 20 !important;
+}
+.jquery-modal{
+    z-index: 15 !important;
+    opacity: 0.4 !important;
+}
